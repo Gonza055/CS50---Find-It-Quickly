@@ -1,0 +1,85 @@
+{
+	"list":
+	[
+		{
+			"name": "Atm",
+			"string": "atm",
+			"img": "atm.png"
+		},
+		{
+			"name": "Bakery",
+			"string": "bakery",
+			"img": "bakery.png"
+		},
+		{
+			"name": "Bank",
+			"string": "bank",
+			"img": "bank.png"
+		},
+		{
+			"name": "Bar",
+			"string": "bar",
+			"img": "alcohol.png"
+		},
+		{
+			"name": "Beauty Salon",
+			"string": "beauty_salon",
+			"img": "beauty_salon.png"
+		},
+		{
+			"name": "Bus Station",
+			"string": "bus_station",
+			"img": "bus_station.png"
+		},
+		{
+			"name": "Cafe",
+			"string": "cafe",
+			"img": "cafe.png"
+		},
+		{
+			"name": "Car Repair",
+			"string": "car_repair",
+			"img": "car_repair.png"
+		},
+		{
+			"name": "Gas Station",
+			"string": "gas_station",
+			"img": "gas_station.png"
+		},
+		{
+			"name": "Gym",
+			"string": "gym",
+			"img": "gym.png"
+		},
+		{
+			"name": "Liquor Store",
+			"string": "liquor_store",
+			"img": "liquor_store.png"
+		},
+		{
+			"name": "Movie Theater",
+			"string": "movie_theater",
+			"img": "movie_theater.png"
+		},
+		{
+			"name": "Night Club",
+			"string": "night_club",
+			"img": "night_club.png"
+		},
+		{
+			"name": "Restaurant",
+			"string": "restaurant",
+			"img": "restaurant.png"
+		},
+		{
+			"name": "Shopping Mall",
+			"string": "shopping_mall",
+			"img": "shopping_mall.png"
+		},
+		{
+			"name": "Spa",
+			"string": "spa",
+			"img": "spa.png"
+		}
+	]
+}

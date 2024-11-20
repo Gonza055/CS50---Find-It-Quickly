@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+	<title>Find it Quickly</title>
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:300,400,700,300italic,400italic'>
+	<link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' crossorigin='anonymous'>
+	<link rel='stylesheet' type='text/css' href='static/css/style.css'/>
+</head>
+
+<body>
+	<div class='container-fluid'>
+		<nav class='navbar navbar-expand-lg navbar-dark bg-primary'>
+			<div class='container-fluid'>
+				<a class='navbar-brand' href='/'>Find It Quickly</a>
+				<div class='navbar-collapse' id='main_nav'>
+					<ul class='navbar-nav'>
+						<li class='nav-item dropdown'>
+							<a class='nav-link dropdown-toggle' href='#' data-bs-toggle='dropdown'>I want to find...</a>
+							<ul class='dropdown-menu'>
+					  			{% for elemento in lista %}
+								<li>
+									<a href="/?type={{ elemento['string'] }}"> {{ elemento['name'] }} </a>
+								</li>
+								{% endfor %}
+							</ul>
+						</li>
+					</ul>
+				</div> 
+			</div> 
+		</nav>
+
+		{% block contenido %}{% endblock %}
+
+	</div>
+</body>
+<script src='https://code.jquery.com/jquery-3.6.0.min.js' crossorigin='anonymous'></script>
+</html>

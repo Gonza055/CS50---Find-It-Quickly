@@ -1,0 +1,51 @@
+{% extends 'pagina.html' %}
+
+{% block contenido %}
+		<!--
+		<div class='container-fluid'>
+			<div class='row'>
+				<div class='slider-content margin-down'>
+					<img class='mySlides' src='img/slide1.png'>
+					<img class='mySlides' src='img/slide2.png'>
+					<img class='mySlides' src='img/slide3.png'>
+				</div>
+			</div>
+		</div>
+		-->
+
+		<div class="container padding">
+			<div class="row margin margin-down">
+				<div class="nav-pos">
+					<center>
+						<div id="changingText">
+							<p>Find a </p>
+							<ul>
+								{% for elemento in lista %}
+								<li class='oculto'><span>{{ elemento['name'] }}</span>
+								{% endfor %}
+							</ul>
+						</div>
+					</center>
+				</div>
+			</div>
+		</div>
+
+		<div class='row squares'>
+			{% for elemento in lista %}
+			<div class='col-sm-12 col-md-4 col-lg-3'>
+				<div class='square'>
+					<a href="/?type={{ elemento['string'] }}" class=''>
+						<img src="static/img/icons/{{ elemento['img'] }}">
+						<div class='p-size'>{{ elemento['name'] }}</div>
+					</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<div class='row'>
+			<center>
+				<img class='division' src='img/division.png'>
+			</center>
+		</div>
+	<script src='static/js/inicio.js'></script>
+{% endblock %}

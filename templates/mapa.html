@@ -1,0 +1,16 @@
+{% extends 'pagina.html' %}
+
+{% block contenido %}
+	<div class='container-fluid'>
+	</div>
+	<!-- Placeholder for Map -->
+	<div class='row'>
+		<center>
+			<div class='map-container'>
+				<div id='map' data-type='{{ tipo }}'></div>
+			</div>
+		</center>
+	</div>
+	<script src='static/js/mapa.js'></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq_5S_SD9DnYgSAfwazX41t6aihi-uCf0&libraries=places&callback=initMap" async></script>
+{% endblock %}
